@@ -35,11 +35,5 @@ public class ExeciceBoucleBase {
         for (int i = 1; i < 100; i = i + 2) {
             System.out.println(i);
         }
-
-        /*************************************
-            PARCOURS D'UN TABLEAU D'ENTIER
-         *************************************/
-
-
     }
 }
