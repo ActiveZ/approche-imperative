@@ -8,6 +8,7 @@
 package fr.algorithmie;
 
 import java.util.Arrays;
+import java.util.OptionalDouble;
 
 public class CalculMoyenne {
     public static void main(String[] args) {
@@ -22,6 +23,7 @@ public class CalculMoyenne {
         }
 
         // affichage de la moyenne
-        System.out.println("Moyenne = " + sum / array.length);
+        System.out.println("Moyenne méthode 1 (arrondi à l'entier) = " + sum / array.length);
+        System.out.println("Moyenne méthode 2 (réelle) = " + Arrays.stream(array).average());
     }
 }
