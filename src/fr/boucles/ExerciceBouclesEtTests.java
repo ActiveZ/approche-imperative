@@ -19,8 +19,8 @@ public class ExerciceBouclesEtTests {
 
         // affichage en ordre inverse
         System.out.println("\nAffichage trié en ordre inverse");
-        for (int i = 0; i < array.length; i++) {
-            System.out.println("Valeur " + i + " = " + array[array.length - i - 1]);
+        for (int i = array.length -1; i >= 0; i--) {
+            System.out.println("Valeur " + i + " = " + array[i]);
         }
 
         // afficher les entiers > 3
