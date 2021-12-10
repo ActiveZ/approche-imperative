@@ -1,10 +1,10 @@
 package entities;
 
 public class AdressePostale {
-    int numberRoad;
-    String nameRoad;
-    String postCode;
-    String city;
+    public int numberRoad;
+    public String nameRoad;
+    public String postCode;
+    public String city;
 
     public AdressePostale(int numero, String rue, String codePostal, String ville) {
         numberRoad = numero;
