@@ -9,11 +9,15 @@ package fr.algorithmie;
 
 import java.util.Scanner;
 
+// test valeur numérique avec regex
 public class InteractifTantQue {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Entrez un nombre entre 1 et 10");
-        String val = sc.nextLine();
-        System.out.println("Value: " + val);
+        String val; // valeur à tester
+        do {
+            System.out.println("Entrez un nombre entre 1 et 10");
+            val = sc.nextLine();
+        } while (!val.matches("[1-9]|10"));
+        System.out.println("Valeur correcte: " + val);
     }
 }
