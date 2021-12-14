@@ -24,9 +24,9 @@ public class TestListInt {
         System.out.println("list = " + list);
 
         //passage en valeur positive des éléments négatifs
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i) < 0) {
-                list.set(i, -list.get(i));
+        for (Integer i : list) {
+            if (i < 0) {
+                list.set(list.indexOf(i), -i);
             }
         }
         System.out.println("list = " + list);
