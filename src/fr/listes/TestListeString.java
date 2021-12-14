@@ -1,6 +1,7 @@
 package fr.listes;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 
@@ -22,5 +23,10 @@ public class TestListeString {
             liste.set(liste.indexOf(v), v.toUpperCase(Locale.ROOT));
         }
 
+        // suppression des villes commençant par "N"
+        liste.removeIf(v -> v.charAt(0) == 'N');
+
+        // affichage du résultat
+        System.out.println("liste = " + liste);
     }
 }
