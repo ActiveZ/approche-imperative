@@ -25,6 +25,8 @@ public class TestListeString {
 
         // suppression des villes commençant par "N"
         liste.removeIf(v -> v.charAt(0) == 'N');
+        // ou bien
+        liste.removeIf(v -> (v.startsWith("N")));
 
         // affichage du résultat
         System.out.println("liste = " + liste);

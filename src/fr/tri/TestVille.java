@@ -1,13 +1,15 @@
-package fr.listes;
+package fr.tri;
+
+import fr.listes.Ville;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Locale;
 
 public class TestVille {
     public static void main(String[] args) {
         List<Ville> liste = new ArrayList<>(
+                //List<Ville> liste = new ArrayList<>(
                 List.of(
                         new Ville("Nice", 343000),
                         new Ville("Carcassonne", 47800),
@@ -19,21 +21,8 @@ public class TestVille {
                         new Ville("Tarbes", 40600))
         );
 
-        // ville la plus peuplée
+        // villes triées parn nom a -> z
         Collections.sort(liste);
-        System.out.println("Ville la plus peuplée: " + liste.get(0).nom);
-
-        // suppression de la ville la moins peuplée
-        liste.remove(liste.size() - 1);
-
-        // ville de plus de 100 000 habitants en majuscules
-        for (Ville v : liste) {
-            if (v.nbHabitants > 100000) {
-                v.nom = v.nom.toUpperCase(Locale.ROOT);
-            }
-        }
-
-        //affichage final
-        System.out.println("liste.toString() = " + liste);
+        System.out.println("liste = " + liste);
     }
 }
