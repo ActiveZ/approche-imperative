@@ -1,0 +1,365 @@
+Ville: Bourg-en-Bresse, Dept: 84, Hab: 43 454
+Ville: Laon, Dept: 32, Hab: 26 031
+Ville: Saint-Quentin, Dept: 32, Hab: 55 940
+Ville: Soissons, Dept: 32, Hab: 29 417
+Ville: Montluçon, Dept: 84, Hab: 37 417
+Ville: Gap, Dept: 93, Hab: 42 567
+Ville: Antibes, Dept: 93, Hab: 74 982
+Ville: Cagnes-sur-Mer, Dept: 93, Hab: 50 385
+Ville: Cannes, Dept: 93, Hab: 75 046
+Ville: Le Cannet, Dept: 93, Hab: 42 056
+Ville: Grasse, Dept: 93, Hab: 51 705
+Ville: Menton, Dept: 93, Hab: 28 942
+Ville: Nice, Dept: 93, Hab: 345 998
+Ville: Saint-Laurent-du-Var, Dept: 93, Hab: 28 831
+Ville: Vallauris, Dept: 93, Hab: 26 787
+Ville: Charleville-Mézières, Dept: 44, Hab: 48 420
+Ville: Troyes, Dept: 44, Hab: 61 988
+Ville: Carcassonne, Dept: 76, Hab: 47 418
+Ville: Narbonne, Dept: 76, Hab: 55 001
+Ville: Rodez, Dept: 76, Hab: 25 747
+Ville: Aix-en-Provence, Dept: 93, Hab: 146 385
+Ville: Arles, Dept: 93, Hab: 53 807
+Ville: Aubagne, Dept: 93, Hab: 45 711
+Ville: La Ciotat, Dept: 93, Hab: 35 758
+Ville: Istres, Dept: 93, Hab: 44 248
+Ville: Marignane, Dept: 93, Hab: 33 949
+Ville: Marseille, Dept: 93, Hab: 870 018
+Ville: Martigues, Dept: 93, Hab: 49 310
+Ville: Miramas, Dept: 93, Hab: 26 217
+Ville: Salon-de-Provence, Dept: 93, Hab: 46 225
+Ville: Vitrolles, Dept: 93, Hab: 34 301
+Ville: Caen, Dept: 28, Hab: 108 461
+Ville: Aurillac, Dept: 84, Hab: 27 659
+Ville: Angoulême, Dept: 75, Hab: 44 629
+Ville: La Rochelle, Dept: 75, Hab: 78 623
+Ville: Saintes, Dept: 75, Hab: 26 890
+Ville: Bourges, Dept: 24, Hab: 67 841
+Ville: Vierzon, Dept: 24, Hab: 27 036
+Ville: Brive-la-Gaillarde, Dept: 75, Hab: 48 333
+Ville: Ajaccio, Dept: 94, Hab: 70 063
+Ville: Bastia, Dept: 94, Hab: 45 596
+Ville: Dijon, Dept: 27, Hab: 159 031
+Ville: Saint-Brieuc, Dept: 53, Hab: 47 058
+Ville: Bergerac, Dept: 75, Hab: 28 166
+Ville: Périgueux, Dept: 75, Hab: 31 505
+Ville: Besançon, Dept: 27, Hab: 120 107
+Ville: Montbéliard, Dept: 27, Hab: 26 015
+Ville: Montélimar, Dept: 84, Hab: 39 924
+Ville: Romans-sur-Isère, Dept: 84, Hab: 34 095
+Ville: Valence, Dept: 84, Hab: 64 322
+Ville: Évreux, Dept: 28, Hab: 51 560
+Ville: Chartres, Dept: 24, Hab: 40 195
+Ville: Dreux, Dept: 24, Hab: 31 575
+Ville: Brest, Dept: 53, Hab: 142 629
+Ville: Quimper, Dept: 53, Hab: 66 743
+Ville: Alès, Dept: 76, Hab: 41 129
+Ville: Nîmes, Dept: 76, Hab: 154 196
+Ville: Colomiers, Dept: 76, Hab: 39 200
+Ville: Muret, Dept: 76, Hab: 25 961
+Ville: Toulouse, Dept: 76, Hab: 482 738
+Ville: Tournefeuille, Dept: 76, Hab: 27 008
+Ville: Bègles, Dept: 75, Hab: 28 092
+Ville: Bordeaux, Dept: 75, Hab: 256 045
+Ville: Gradignan, Dept: 75, Hab: 26 029
+Ville: Libourne, Dept: 75, Hab: 25 491
+Ville: Mérignac, Dept: 75, Hab: 71 203
+Ville: Pessac, Dept: 75, Hab: 62 737
+Ville: Saint-Médard-en-Jalles, Dept: 75, Hab: 31 576
+Ville: Talence, Dept: 75, Hab: 44 040
+Ville: La Teste-de-Buch, Dept: 75, Hab: 26 525
+Ville: Villenave-d'Ornon, Dept: 75, Hab: 33 091
+Ville: Agde, Dept: 76, Hab: 28 120
+Ville: Béziers, Dept: 76, Hab: 77 894
+Ville: Lunel, Dept: 76, Hab: 26 263
+Ville: Montpellier, Dept: 76, Hab: 286 098
+Ville: Sète, Dept: 76, Hab: 44 271
+Ville: Rennes, Dept: 53, Hab: 222 104
+Ville: Saint-Malo, Dept: 53, Hab: 47 528
+Ville: Châteauroux, Dept: 24, Hab: 45 780
+Ville: Joué-lès-Tours, Dept: 24, Hab: 37 974
+Ville: Tours, Dept: 24, Hab: 139 963
+Ville: Bourgoin-Jallieu, Dept: 84, Hab: 28 399
+Ville: Échirolles, Dept: 84, Hab: 36 143
+Ville: Grenoble, Dept: 84, Hab: 160 836
+Ville: Saint-Martin-d'Hères, Dept: 84, Hab: 38 974
+Ville: Vienne, Dept: 84, Hab: 30 178
+Ville: Mont-de-Marsan, Dept: 75, Hab: 31 517
+Ville: Blois, Dept: 24, Hab: 47 524
+Ville: Roanne, Dept: 84, Hab: 35 913
+Ville: Saint-Chamond, Dept: 84, Hab: 35 969
+Ville: Saint-Étienne, Dept: 84, Hab: 174 298
+Ville: Nantes, Dept: 52, Hab: 314 611
+Ville: Orvault, Dept: 52, Hab: 26 618
+Ville: Rezé, Dept: 52, Hab: 41 808
+Ville: Saint-Herblain, Dept: 52, Hab: 47 502
+Ville: Saint-Nazaire, Dept: 52, Hab: 72 295
+Ville: Saint-Sébastien-sur-Loire, Dept: 52, Hab: 27 591
+Ville: Orléans, Dept: 24, Hab: 118 102
+Ville: Agen, Dept: 75, Hab: 34 565
+Ville: Angers, Dept: 52, Hab: 155 543
+Ville: Cholet, Dept: 52, Hab: 55 772
+Ville: Saumur, Dept: 52, Hab: 28 554
+Ville: Sèvremoine, Dept: 52, Hab: 26 239
+Ville: Cherbourg-en-Cotentin, Dept: 28, Hab: 82 578
+Ville: Châlons-en-Champagne, Dept: 44, Hab: 46 288
+Ville: Reims, Dept: 44, Hab: 187 074
+Ville: Saint-Dizier, Dept: 44, Hab: 25 666
+Ville: Laval, Dept: 52, Hab: 52 359
+Ville: Nancy, Dept: 44, Hab: 106 953
+Ville: Vandœuvre-lès-Nancy, Dept: 44, Hab: 30 502
+Ville: Lorient, Dept: 53, Hab: 58 789
+Ville: Vannes, Dept: 53, Hab: 55 573
+Ville: Metz, Dept: 44, Hab: 119 856
+Ville: Thionville, Dept: 44, Hab: 41 396
+Ville: Nevers, Dept: 27, Hab: 34 799
+Ville: Armentières, Dept: 32, Hab: 25 373
+Ville: Cambrai, Dept: 32, Hab: 33 349
+Ville: Douai, Dept: 32, Hab: 40 860
+Ville: Dunkerque, Dept: 32, Hab: 89 485
+Ville: Lambersart, Dept: 32, Hab: 28 027
+Ville: Lille, Dept: 32, Hab: 236 782
+Ville: Marcq-en-Barœul, Dept: 32, Hab: 39 697
+Ville: Maubeuge, Dept: 32, Hab: 29 995
+Ville: Roubaix, Dept: 32, Hab: 96 953
+Ville: Tourcoing, Dept: 32, Hab: 98 170
+Ville: Valenciennes, Dept: 32, Hab: 44 509
+Ville: Villeneuve-d'Ascq, Dept: 32, Hab: 63 085
+Ville: Wattrelos, Dept: 32, Hab: 41 570
+Ville: Beauvais, Dept: 32, Hab: 57 548
+Ville: Compiègne, Dept: 32, Hab: 41 660
+Ville: Creil, Dept: 32, Hab: 36 091
+Ville: Alençon, Dept: 28, Hab: 27 221
+Ville: Arras, Dept: 32, Hab: 41 973
+Ville: Béthune, Dept: 32, Hab: 25 753
+Ville: Boulogne-sur-Mer, Dept: 32, Hab: 42 293
+Ville: Calais, Dept: 32, Hab: 75 719
+Ville: Hénin-Beaumont, Dept: 32, Hab: 26 260
+Ville: Lens, Dept: 32, Hab: 31 080
+Ville: Liévin, Dept: 32, Hab: 31 337
+Ville: Clermont-Ferrand, Dept: 84, Hab: 146 112
+Ville: Anglet, Dept: 75, Hab: 39 995
+Ville: Bayonne, Dept: 75, Hab: 51 943
+Ville: Biarritz, Dept: 75, Hab: 25 518
+Ville: Pau, Dept: 75, Hab: 79 022
+Ville: Tarbes, Dept: 76, Hab: 41 862
+Ville: Perpignan, Dept: 76, Hab: 123 602
+Ville: Haguenau, Dept: 44, Hab: 35 024
+Ville: Illkirch-Graffenstaden, Dept: 44, Hab: 27 505
+Ville: Schiltigheim, Dept: 44, Hab: 32 024
+Ville: Strasbourg, Dept: 44, Hab: 283 515
+Ville: Colmar, Dept: 44, Hab: 71 445
+Ville: Mulhouse, Dept: 44, Hab: 110 468
+Ville: Bron, Dept: 84, Hab: 41 589
+Ville: Caluire-et-Cuire, Dept: 84, Hab: 43 546
+Ville: Décines-Charpieu, Dept: 84, Hab: 28 249
+Ville: Lyon 1er Arrondissement, Dept: 84, Hab: 30 423
+Ville: Lyon 2e Arrondissement, Dept: 84, Hab: 30 857
+Ville: Lyon 3e Arrondissement, Dept: 84, Hab: 103 506
+Ville: Lyon 4e Arrondissement, Dept: 84, Hab: 36 524
+Ville: Lyon 5e Arrondissement, Dept: 84, Hab: 49 998
+Ville: Lyon 6e Arrondissement, Dept: 84, Hab: 52 282
+Ville: Lyon 7e Arrondissement, Dept: 84, Hab: 82 651
+Ville: Lyon 8e Arrondissement, Dept: 84, Hab: 85 610
+Ville: Lyon 9e Arrondissement, Dept: 84, Hab: 51 313
+Ville: Meyzieu, Dept: 84, Hab: 33 351
+Ville: Oullins, Dept: 84, Hab: 26 838
+Ville: Rillieux-la-Pape, Dept: 84, Hab: 30 275
+Ville: Saint-Priest, Dept: 84, Hab: 46 153
+Ville: Vaulx-en-Velin, Dept: 84, Hab: 48 906
+Ville: Vénissieux, Dept: 84, Hab: 65 822
+Ville: Villefranche-sur-Saône, Dept: 84, Hab: 37 783
+Ville: Villeurbanne, Dept: 84, Hab: 150 375
+Ville: Chalon-sur-Saône, Dept: 27, Hab: 47 085
+Ville: Mâcon, Dept: 27, Hab: 34 448
+Ville: Le Mans, Dept: 52, Hab: 146 804
+Ville: Aix-les-Bains, Dept: 84, Hab: 30 377
+Ville: Chambéry, Dept: 84, Hab: 60 872
+Ville: Annecy, Dept: 84, Hab: 130 257
+Ville: Annemasse, Dept: 84, Hab: 35 461
+Ville: Thonon-les-Bains, Dept: 84, Hab: 36 296
+Ville: Paris, Dept: 11, Hab: 2 210 875
+Ville: Dieppe, Dept: 28, Hab: 30 588
+Ville: Le Grand-Quevilly, Dept: 28, Hab: 26 175
+Ville: Le Havre, Dept: 28, Hab: 172 769
+Ville: Rouen, Dept: 28, Hab: 112 596
+Ville: Saint-Étienne-du-Rouvray, Dept: 28, Hab: 29 180
+Ville: Sotteville-lès-Rouen, Dept: 28, Hab: 29 766
+Ville: Bussy-Saint-Georges, Dept: 11, Hab: 27 299
+Ville: Chelles, Dept: 11, Hab: 54 682
+Ville: Meaux, Dept: 11, Hab: 56 249
+Ville: Melun, Dept: 11, Hab: 41 183
+Ville: Pontault-Combault, Dept: 11, Hab: 38 587
+Ville: Savigny-le-Temple, Dept: 11, Hab: 30 352
+Ville: Villeparisis, Dept: 11, Hab: 26 507
+Ville: Chatou, Dept: 11, Hab: 31 653
+Ville: Le Chesnay, Dept: 11, Hab: 28 558
+Ville: Conflans-Sainte-Honorine, Dept: 11, Hab: 36 058
+Ville: Élancourt, Dept: 11, Hab: 25 829
+Ville: Guyancourt, Dept: 11, Hab: 28 839
+Ville: Houilles, Dept: 11, Hab: 32 064
+Ville: Mantes-la-Jolie, Dept: 11, Hab: 44 231
+Ville: Montigny-le-Bretonneux, Dept: 11, Hab: 33 535
+Ville: Les Mureaux, Dept: 11, Hab: 32 777
+Ville: Plaisir, Dept: 11, Hab: 32 128
+Ville: Poissy, Dept: 11, Hab: 37 524
+Ville: Rambouillet, Dept: 11, Hab: 26 781
+Ville: Saint-Germain-en-Laye, Dept: 11, Hab: 41 749
+Ville: Sartrouville, Dept: 11, Hab: 53 237
+Ville: Trappes, Dept: 11, Hab: 32 931
+Ville: Versailles, Dept: 11, Hab: 87 315
+Ville: Niort, Dept: 75, Hab: 61 044
+Ville: Amiens, Dept: 32, Hab: 136 998
+Ville: Albi, Dept: 76, Hab: 51 151
+Ville: Castres, Dept: 76, Hab: 42 923
+Ville: Montauban, Dept: 76, Hab: 61 978
+Ville: Draguignan, Dept: 93, Hab: 40 928
+Ville: Fréjus, Dept: 93, Hab: 54 023
+Ville: La Garde, Dept: 93, Hab: 25 645
+Ville: Hyères, Dept: 93, Hab: 56 799
+Ville: Saint-Raphaël, Dept: 93, Hab: 35 826
+Ville: La Seyne-sur-Mer, Dept: 93, Hab: 65 386
+Ville: Six-Fours-les-Plages, Dept: 93, Hab: 33 904
+Ville: Toulon, Dept: 93, Hab: 171 643
+Ville: Avignon, Dept: 93, Hab: 94 200
+Ville: Carpentras, Dept: 93, Hab: 29 498
+Ville: Cavaillon, Dept: 93, Hab: 26 985
+Ville: Orange, Dept: 93, Hab: 29 856
+Ville: La Roche-sur-Yon, Dept: 52, Hab: 56 991
+Ville: Châtellerault, Dept: 75, Hab: 32 887
+Ville: Poitiers, Dept: 75, Hab: 90 590
+Ville: Limoges, Dept: 75, Hab: 135 140
+Ville: Épinal, Dept: 44, Hab: 33 454
+Ville: Auxerre, Dept: 27, Hab: 36 804
+Ville: Sens, Dept: 27, Hab: 26 688
+Ville: Belfort, Dept: 27, Hab: 49 926
+Ville: Athis-Mons, Dept: 11, Hab: 34 065
+Ville: Brétigny-sur-Orge, Dept: 11, Hab: 26 702
+Ville: Brunoy, Dept: 11, Hab: 26 520
+Ville: Corbeil-Essonnes, Dept: 11, Hab: 51 682
+Ville: Draveil, Dept: 11, Hab: 29 558
+Ville: Évry, Dept: 11, Hab: 55 425
+Ville: Grigny, Dept: 11, Hab: 29 118
+Ville: Massy, Dept: 11, Hab: 50 549
+Ville: Palaiseau, Dept: 11, Hab: 34 954
+Ville: Ris-Orangis, Dept: 11, Hab: 29 040
+Ville: Sainte-Geneviève-des-Bois, Dept: 11, Hab: 36 219
+Ville: Savigny-sur-Orge, Dept: 11, Hab: 36 677
+Ville: Les Ulis, Dept: 11, Hab: 25 031
+Ville: Vigneux-sur-Seine, Dept: 11, Hab: 31 488
+Ville: Viry-Châtillon, Dept: 11, Hab: 30 962
+Ville: Yerres, Dept: 11, Hab: 29 132
+Ville: Antony, Dept: 11, Hab: 62 989
+Ville: Asnières-sur-Seine, Dept: 11, Hab: 86 678
+Ville: Bagneux, Dept: 11, Hab: 39 977
+Ville: Bois-Colombes, Dept: 11, Hab: 28 607
+Ville: Boulogne-Billancourt, Dept: 11, Hab: 120 943
+Ville: Châtenay-Malabry, Dept: 11, Hab: 33 413
+Ville: Châtillon, Dept: 11, Hab: 37 132
+Ville: Clamart, Dept: 11, Hab: 53 099
+Ville: Clichy, Dept: 11, Hab: 60 746
+Ville: Colombes, Dept: 11, Hab: 86 050
+Ville: Courbevoie, Dept: 11, Hab: 82 351
+Ville: La Garenne-Colombes, Dept: 11, Hab: 29 503
+Ville: Gennevilliers, Dept: 11, Hab: 46 939
+Ville: Issy-les-Moulineaux, Dept: 11, Hab: 69 231
+Ville: Levallois-Perret, Dept: 11, Hab: 64 028
+Ville: Malakoff, Dept: 11, Hab: 30 286
+Ville: Meudon, Dept: 11, Hab: 46 014
+Ville: Montrouge, Dept: 11, Hab: 49 372
+Ville: Nanterre, Dept: 11, Hab: 96 321
+Ville: Neuilly-sur-Seine, Dept: 11, Hab: 61 501
+Ville: Le Plessis-Robinson, Dept: 11, Hab: 29 192
+Ville: Puteaux, Dept: 11, Hab: 44 941
+Ville: Rueil-Malmaison, Dept: 11, Hab: 79 783
+Ville: Saint-Cloud, Dept: 11, Hab: 30 797
+Ville: Suresnes, Dept: 11, Hab: 49 145
+Ville: Vanves, Dept: 11, Hab: 28 148
+Ville: Aubervilliers, Dept: 11, Hab: 86 533
+Ville: Aulnay-sous-Bois, Dept: 11, Hab: 85 214
+Ville: Bagnolet, Dept: 11, Hab: 36 047
+Ville: Le Blanc-Mesnil, Dept: 11, Hab: 56 346
+Ville: Bobigny, Dept: 11, Hab: 52 633
+Ville: Bondy, Dept: 11, Hab: 53 416
+Ville: Clichy-sous-Bois, Dept: 11, Hab: 29 978
+Ville: La Courneuve, Dept: 11, Hab: 42 712
+Ville: Drancy, Dept: 11, Hab: 70 883
+Ville: Épinay-sur-Seine, Dept: 11, Hab: 55 754
+Ville: Gagny, Dept: 11, Hab: 39 391
+Ville: Livry-Gargan, Dept: 11, Hab: 44 721
+Ville: Montfermeil, Dept: 11, Hab: 26 262
+Ville: Montreuil, Dept: 11, Hab: 109 235
+Ville: Neuilly-sur-Marne, Dept: 11, Hab: 34 859
+Ville: Noisy-le-Grand, Dept: 11, Hab: 67 086
+Ville: Noisy-le-Sec, Dept: 11, Hab: 43 693
+Ville: Pantin, Dept: 11, Hab: 55 585
+Ville: Pierrefitte-sur-Seine, Dept: 11, Hab: 29 728
+Ville: Romainville, Dept: 11, Hab: 26 640
+Ville: Rosny-sous-Bois, Dept: 11, Hab: 45 663
+Ville: Saint-Denis, Dept: 11, Hab: 112 309
+Ville: Saint-Ouen, Dept: 11, Hab: 49 949
+Ville: Sevran, Dept: 11, Hab: 50 888
+Ville: Stains, Dept: 11, Hab: 39 776
+Ville: Tremblay-en-France, Dept: 11, Hab: 35 866
+Ville: Villemomble, Dept: 11, Hab: 30 227
+Ville: Villepinte, Dept: 11, Hab: 36 809
+Ville: Alfortville, Dept: 11, Hab: 44 136
+Ville: Cachan, Dept: 11, Hab: 30 524
+Ville: Champigny-sur-Marne, Dept: 11, Hab: 77 883
+Ville: Charenton-le-Pont, Dept: 11, Hab: 30 793
+Ville: Choisy-le-Roi, Dept: 11, Hab: 44 781
+Ville: Créteil, Dept: 11, Hab: 90 052
+Ville: Fontenay-sous-Bois, Dept: 11, Hab: 53 968
+Ville: Fresnes, Dept: 11, Hab: 27 556
+Ville: L' Haÿ-les-Roses, Dept: 11, Hab: 31 416
+Ville: Ivry-sur-Seine, Dept: 11, Hab: 61 099
+Ville: Le Kremlin-Bicêtre, Dept: 11, Hab: 25 422
+Ville: Limeil-Brévannes, Dept: 11, Hab: 26 901
+Ville: Maisons-Alfort, Dept: 11, Hab: 55 816
+Ville: Nogent-sur-Marne, Dept: 11, Hab: 32 195
+Ville: Le Perreux-sur-Marne, Dept: 11, Hab: 34 017
+Ville: Saint-Maur-des-Fossés, Dept: 11, Hab: 75 833
+Ville: Sucy-en-Brie, Dept: 11, Hab: 26 575
+Ville: Thiais, Dept: 11, Hab: 29 295
+Ville: Villejuif, Dept: 11, Hab: 55 805
+Ville: Villeneuve-Saint-Georges, Dept: 11, Hab: 33 135
+Ville: Villiers-sur-Marne, Dept: 11, Hab: 29 407
+Ville: Vincennes, Dept: 11, Hab: 50 300
+Ville: Vitry-sur-Seine, Dept: 11, Hab: 93 317
+Ville: Argenteuil, Dept: 11, Hab: 112 064
+Ville: Bezons, Dept: 11, Hab: 29 216
+Ville: Cergy, Dept: 11, Hab: 64 451
+Ville: Eaubonne, Dept: 11, Hab: 25 514
+Ville: Ermont, Dept: 11, Hab: 29 400
+Ville: Franconville, Dept: 11, Hab: 36 349
+Ville: Garges-lès-Gonesse, Dept: 11, Hab: 42 821
+Ville: Gonesse, Dept: 11, Hab: 26 556
+Ville: Goussainville, Dept: 11, Hab: 31 167
+Ville: Herblay, Dept: 11, Hab: 29 614
+Ville: Pontoise, Dept: 11, Hab: 31 880
+Ville: Sannois, Dept: 11, Hab: 27 118
+Ville: Sarcelles, Dept: 11, Hab: 58 332
+Ville: Taverny, Dept: 11, Hab: 26 541
+Ville: Villiers-le-Bel, Dept: 11, Hab: 27 519
+Ville: Les Abymes, Dept: 01, Hab: 54 818
+Ville: Baie-Mahault, Dept: 01, Hab: 31 338
+Ville: Le Gosier, Dept: 01, Hab: 27 023
+Ville: Fort-de-France, Dept: 02, Hab: 82 030
+Ville: Le Lamentin, Dept: 02, Hab: 40 920
+Ville: Cayenne, Dept: 03, Hab: 60 947
+Ville: Kourou, Dept: 03, Hab: 26 726
+Ville: Matoury, Dept: 03, Hab: 32 768
+Ville: Remire-Montjoly, Dept: 03, Hab: 26 170
+Ville: Saint-Laurent-du-Maroni, Dept: 03, Hab: 44 130
+Ville: Le Port, Dept: 04, Hab: 35 141
+Ville: La Possession, Dept: 04, Hab: 33 337
+Ville: Saint-André, Dept: 04, Hab: 56 088
+Ville: Saint-Benoît, Dept: 04, Hab: 38 466
+Ville: Saint-Denis, Dept: 04, Hab: 149 337
+Ville: Saint-Joseph, Dept: 04, Hab: 38 167
+Ville: Saint-Leu, Dept: 04, Hab: 34 160
+Ville: Saint-Louis, Dept: 04, Hab: 53 832
+Ville: Saint-Paul, Dept: 04, Hab: 106 920
+Ville: Saint-Pierre, Dept: 04, Hab: 85 059
+Ville: Sainte-Marie, Dept: 04, Hab: 33 587
+Ville: Le Tampon, Dept: 04, Hab: 78 366
