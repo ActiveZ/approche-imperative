@@ -23,7 +23,7 @@ public class ManipulationFichier {
         for (String line : lines) {
             if (Integer.parseInt(line.split(";")[9].trim().replaceAll(" ", "")) > 25000) {
                 String str = ("Ville: " + line.split(";")[6] +
-                        ", Dept: " + line.split(";")[0] +
+                        ", Dept: " + line.split(";")[2] +
                         ", Hab: " + line.split(";")[9]);
                 // System.out.println("str = " + str);  //debug
                 target.add(str);
