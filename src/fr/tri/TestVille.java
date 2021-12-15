@@ -26,8 +26,18 @@ public class TestVille {
         System.out.println("liste = " + liste);
 
 
-        // tri des villes par nombre d'habitants => changé l'implémentation de compareTo dans la classe ville
-        Collections.sort(liste);
-        System.out.println("liste = " + liste);
+        // tri des villes par nombre d'habitants => changer l'implémentation de compareTo dans la classe ville
+        //Collections.sort(liste);
+        //System.out.println("liste = " + liste);
+
+        ///////////////// exercice 3: classes Comparator ///////////////////
+
+        // tri par nombre d'habitants croissants
+        Collections.sort(liste, new ComparatorHabitant());
+        System.out.println("liste par nb habitants = " + liste);
+
+        // tri par nom de ville a -> z
+        Collections.sort(liste, new ComparatorNom());
+        System.out.println("liste par nom a -> z= " + liste);
     }
 }

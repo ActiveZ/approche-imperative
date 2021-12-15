@@ -1,8 +1,8 @@
 package fr.listes;
 
 public class Ville implements Comparable<Ville> {
-    String nom;
-    int nbHabitants;
+    public String nom;
+    public int nbHabitants;
 
     public Ville(String nom, int nbHabitants) {
         this.nom = nom;
