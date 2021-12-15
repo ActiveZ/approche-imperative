@@ -22,7 +22,9 @@ public class ManipulationFichier {
 
         for (String line : lines) {
             if (Integer.parseInt(line.split(";")[9].trim().replaceAll(" ", "")) > 25000) {
-                String str = ("Ville: " + line.split(";")[6] + ", Dept: " + line.split(";")[0] + ", Hab: " + line.split(";")[9]);
+                String str = ("Ville: " + line.split(";")[6] +
+                        ", Dept: " + line.split(";")[0] +
+                        ", Hab: " + line.split(";")[9]);
                 // System.out.println("str = " + str);  //debug
                 target.add(str);
             }
@@ -31,5 +33,6 @@ public class ManipulationFichier {
         // écriture dans le fichier cible
         Path pathTarget = Paths.get("src/fr/fichier/tp_14.txt");
         Files.write(pathTarget, target, StandardCharsets.UTF_8);
+        System.out.println("Fichier tp_14.txt créé avec succès !");
     }
 }
