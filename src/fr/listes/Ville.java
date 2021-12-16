@@ -1,5 +1,7 @@
 package fr.listes;
 
+import java.util.Objects;
+
 public class Ville implements Comparable<Ville> {
     public String nom;
     public int nbHabitants;
@@ -27,5 +29,20 @@ public class Ville implements Comparable<Ville> {
     @Override
     public String toString() {
         return "Ville{nom=" + nom + ", nbHabitants=" + nbHabitants + "}\n";
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Ville ville = (Ville) o;
+        return nbHabitants == ville.nbHabitants && Objects.equals(nom, ville.nom);
+    }
+
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nom, nbHabitants);
     }
 }

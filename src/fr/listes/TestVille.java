@@ -35,5 +35,14 @@ public class TestVille {
 
         //affichage final
         System.out.println("liste.toString() = " + liste);
+
+
+        // test equals
+        Ville v1 = new Ville("ville", 100);
+        Ville v2 = new Ville("ville", 100);
+        System.out.println("v2.equals(v1) -> " + v2.equals(v1)); // true
+        System.out.println("v2 == v1 -> " + (v2 == v1)); // false
+        v2 = v1;
+        System.out.println("v2 == v1 -> " + (v2 == v1)); // true
     }
 }
