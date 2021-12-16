@@ -24,7 +24,7 @@ public class TestCalendar {
         System.out.println(sdf.format(date));
 
 
-        sdf = new SimpleDateFormat("d MMMM yyyy 'à' HH'h'mm 'et' ss 'secondes'", Locale.); // pas de russe ?
+        //sdf = new SimpleDateFormat("d MMMM yyyy 'à' HH'h'mm 'et' ss 'secondes'", Locale.); // pas de russe ?
         //System.out.println(sdf.format(date));
 
     }
