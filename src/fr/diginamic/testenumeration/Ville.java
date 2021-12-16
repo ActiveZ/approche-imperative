@@ -1,6 +1,4 @@
-package fr.listes;
-
-import fr.diginamic.testenumeration.Continent;
+package fr.diginamic.testenumeration;
 
 import java.util.Objects;
 
@@ -9,9 +7,10 @@ public class Ville implements Comparable<Ville> {
     public int nbHabitants;
     Continent continent;
 
-    public Ville(String nom, int nbHabitants) {
+    public Ville(String nom, int nbHabitants, Continent continent) {
         this.nom = nom;
         this.nbHabitants = nbHabitants;
+        this.continent = continent;
     }
 
 
@@ -31,7 +30,10 @@ public class Ville implements Comparable<Ville> {
 
     @Override
     public String toString() {
-        return "Ville{nom=" + nom + ", nbHabitants=" + nbHabitants + "}\n";
+        return "Ville{nom=" + nom +
+                ", nbHabitants=" + nbHabitants +
+                ", continent=" + continent +
+                "}\n";
     }
 
 
@@ -43,9 +45,11 @@ public class Ville implements Comparable<Ville> {
         return nbHabitants == ville.nbHabitants && Objects.equals(nom, ville.nom);
     }
 
+    public Continent getContinent() {
+        return continent;
+    }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(nom, nbHabitants);
+    public void setContinent(Continent continent) {
+        this.continent = continent;
     }
 }
