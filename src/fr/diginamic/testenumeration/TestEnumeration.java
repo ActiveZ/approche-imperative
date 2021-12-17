@@ -11,7 +11,7 @@ public class TestEnumeration {
         Saison ete = Saison.ETE;
         System.out.println("ete = " + ete);
 
-        String libelle = "Hiver";
+        String libelle = "Hiver"; // todo
 
     }
 }
