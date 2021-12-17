@@ -7,7 +7,7 @@ import java.util.Objects;
 public class Ville implements Comparable<Ville> {
     public String nom;
     public int nbHabitants;
-    Continent continent;
+//    Continent continent;
 
     public Ville(String nom, int nbHabitants) {
         this.nom = nom;

@@ -8,9 +8,14 @@ public class TestReflectionUtils {
     public static void main(String[] args) throws IllegalAccessException {
         Ville ville = new Ville("Nantes", 325748);
 
-        afficherAttributs(ville);
+        //afficherAttributs(ville);
 
-        //afficherAttributs(null);
+        try {
+            afficherAttributs(null);
+        } catch (ReflectionException e) {
+            System.out.println(e);
+            //e.printStackTrace();
+        }
     }
 
 
