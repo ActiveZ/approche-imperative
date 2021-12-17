@@ -1,6 +1,6 @@
 package fr.fichier;
 
-public class Region {
+public class Region implements Comparable<Region> {
     int regCodeRegion;
     String regNomRegion;
     int regPopulation;
@@ -11,6 +11,7 @@ public class Region {
         this.regPopulation = regPopulation;
     }
 
+
     @Override
     public String toString() {
         return "Region{" +
@@ -18,5 +19,12 @@ public class Region {
                 ", regNomRegion='" + regNomRegion + '\'' +
                 ", regPopulation=" + regPopulation +
                 '}' + "\n";
+    }
+
+
+    // tri en ordre décroissant
+    @Override
+    public int compareTo(Region o) {
+        return o.regPopulation- this.regPopulation;
     }
 }

@@ -9,7 +9,10 @@ import java.util.*;
 
 public class Launch {
     public static void main(String[] args) throws IOException {
-        // menu principal
+
+        ////////////////////
+        // menu principal //
+        ////////////////////
         Scanner sc = new Scanner(System.in);
         String s; // choix utilisateur
         do {
@@ -28,7 +31,10 @@ public class Launch {
         } while (!s.matches("[0-8]"));
         int choix = Integer.parseInt(s);
 
-        // récupération des données
+
+        //////////////////////////////
+        // récupération des données //
+        /////////////////////////////
         Path path = Paths.get("src/fr/fichier/recensement.csv");
         List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8); // fichier source
         List<Data> listDatas = new ArrayList<>(); // liste de données
@@ -36,9 +42,10 @@ public class Launch {
         // suppression de la 1ère ligne du fichier source (en-tête)
         lines.remove(0);
 
-        ////////////////////////////////
-        // peuplement de la liste data//
-        ////////////////////////////////
+
+        /////////////////////////////////
+        // peuplement de la liste data //
+        /////////////////////////////////
         for (String line : lines) {
             Data data = new Data(
                     Integer.parseInt(line.split(";")[0]),
@@ -53,6 +60,9 @@ public class Launch {
                     Integer.parseInt(line.split(";")[9].trim().replaceAll(" ", "")));
             listDatas.add(data);
         }
+        // tri des villes (listDatas) par ordre décroissant de population (pour options 6, 7, et 8)
+        Collections.sort(listDatas);
+
 
         ////////////////////////////////////////
         // peuplement de la liste département //
@@ -71,7 +81,6 @@ public class Launch {
             }
             listDepartements.add(departement);
         }
-//        System.out.println("listDepartements = " + listDepartements); // debug
 
 
         ///////////////////////////////////
@@ -93,11 +102,14 @@ public class Launch {
             }
             listRegions.add(region);
         }
-        System.out.println("listRegions = " + listRegions); // debug
 
 
+        ////////////////
+        // MAIN CHOIX //
+        ///////////////
         int population = 0;
         switch (choix) {
+
             // population d'une ville donnée
             case 1:
                 Data ville = null;
@@ -156,41 +168,75 @@ public class Launch {
 
             // Afficher les 10 régions les plus peuplées
             case 4:
-                // TODO: 15/12/2021
+                // tri listRegion en ordre décroissant de population
+                Collections.sort(listRegions);
+                // affichage résultat
+                for (int i = 0; i < 10; i++) {
+                    System.out.println("Région: " + listRegions.get(i).regNomRegion + " -- Population: " + listRegions.get(i).regPopulation + " habitants");
+                }
                 break;
 
 
             // Afficher les 10 départements les plus peuplés
             case 5:
-                // TODO: 15/12/2021
+                System.out.println("Les 10 départements les plus peuplés de France:");
+                for (int i = 0; i < 10; i++) {
+                    System.out.println("Département:" + listDepartements.get(i).deptCode + " -- Population: " + listDepartements.get(i).deptPopulation + " habitants");
+                }
                 break;
 
 
             // Afficher les 10 villes les plus peuplées d’un département
             case 6:
-                // TODO: 15/12/2021
+                do {
+                    System.out.println("Choisissez un numéro de Département");
+                    s = sc.nextLine();
+                } while (!s.matches("\\d+"));
+                if (Integer.parseInt(s) == 0) break; // annulation utilisateur
+
+                System.out.println("Les 10 villes les plus peuplées du département " + s + ":");
+
+                int nbVille = 0;// compteur du nombre de villes trouvées
+                for (Data d : listDatas) {
+                    if (d.dept.equals(s)) {
+                        System.out.println("Ville: " + d.nomCommune + " -- Population: " + d.population + " habitants");
+                        if (++nbVille == 10) break;
+                    }
+                }
                 break;
 
 
             // Afficher les 10 villes les plus peuplées d’une région
             case 7:
-                // TODO: 15/12/2021
+                do {
+                    System.out.println("Choisissez un numéro de région (ex PdL: 52):");
+                    s = sc.nextLine();
+                } while (!s.matches("\\d+"));
+                if (Integer.parseInt(s) == 0) break; // annulation utilisateur
+
+                System.out.println("Les 10 villes les plus peuplées de la région " + s + ":");
+
+                nbVille = 0;// compteur du nombre de villes trouvées
+                for (Data d : listDatas) {
+                    if (d.codeRegion == Integer.parseInt(s)) {
+                        System.out.println("Ville: " + d.nomCommune + " -- Population: " + d.population + " habitants");
+                        if (++nbVille == 10) break;
+                    }
+                }
                 break;
 
 
             // les 10 villes les plus peuplées de France
             case 8:
-                Collections.sort(listDatas, new compFrance());
                 System.out.println("Les 10 villes les plus peuplées de France:");
                 for (int i = 0; i < 10; i++) {
-                    System.out.println(i + 1 + ": " + listDatas.get(i).nomCommune + " -- " + listDatas.get(i).popMunicipale + " hab.");
-                    System.out.println("listData = " + listDatas.get(i));
+                    System.out.println(i + 1 + ": " + listDatas.get(i).nomCommune + " -- " + listDatas.get(i).popMunicipale + " habitants");
                 }
                 break;
+
+
             default:
                 System.exit(0);
         }
-
     }
-
 }

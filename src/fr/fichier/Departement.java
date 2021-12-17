@@ -1,6 +1,6 @@
 package fr.fichier;
 
-public class Departement {
+public class Departement implements Comparable<Departement>{
     String deptCode;
     //String nom;
     int deptPopulation;
@@ -16,5 +16,11 @@ public class Departement {
                 "dept='" + deptCode + '\'' +
                 ", population=" + deptPopulation +
                 '}' + "\n";
+    }
+
+    // tri en ordre décroissant
+    @Override
+    public int compareTo(Departement o) {
+        return o.deptPopulation - this.deptPopulation;
     }
 }

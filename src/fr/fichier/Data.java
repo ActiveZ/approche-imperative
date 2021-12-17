@@ -1,6 +1,6 @@
 package fr.fichier;
 
-public class Data {
+public class Data implements Comparable<Data>{
     int codeRegion;
     String nomRegion;
     String dept; // ! corse 2A et 2B
@@ -39,5 +39,11 @@ public class Data {
                 ", popComptee=" + popAPart +
                 ", population=" + population +
                 '}' + "\n";
+    }
+
+    // tri par population décroissante
+    @Override
+    public int compareTo(Data o) {
+        return o.population - this.population;
     }
 }
