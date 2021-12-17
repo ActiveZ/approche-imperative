@@ -6,7 +6,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class Launch {
     public static void main(String[] args) throws IOException {
@@ -22,7 +21,7 @@ public class Launch {
                     "4: Les 10 régions les plus peuplées\n" +
                     "5: Les 10 départements les plus peuplés\n" +
                     "6: Les 10 villes les plus peuplées d'un département\n" +
-                    "7: Les 10 villes les plus peuplées d'une réion\n" +
+                    "7: Les 10 villes les plus peuplées d'une région\n" +
                     "8: Les 10 villes les plus peuplées de France"
             );
             s = sc.nextLine();
@@ -32,12 +31,14 @@ public class Launch {
         // récupération des données
         Path path = Paths.get("src/fr/fichier/recensement.csv");
         List<String> lines = Files.readAllLines(path, StandardCharsets.UTF_8); // fichier source
-        List<Data> listData = new ArrayList<>(); // liste de données
+        List<Data> listDatas = new ArrayList<>(); // liste de données
 
         // suppression de la 1ère ligne du fichier source (en-tête)
         lines.remove(0);
 
-        // peuplement de la liste data
+        ////////////////////////////////
+        // peuplement de la liste data//
+        ////////////////////////////////
         for (String line : lines) {
             Data data = new Data(
                     Integer.parseInt(line.split(";")[0]),
@@ -50,10 +51,51 @@ public class Launch {
                     Integer.parseInt(line.split(";")[7].trim().replaceAll(" ", "")),
                     Integer.parseInt(line.split(";")[8].trim().replaceAll(" ", "")),
                     Integer.parseInt(line.split(";")[9].trim().replaceAll(" ", "")));
-            listData.add(data);
+            listDatas.add(data);
         }
 
-//        System.out.println("listData = " + listData.get(0)); // debug
+        ////////////////////////////////////////
+        // peuplement de la liste département //
+        ////////////////////////////////////////
+        List<Departement> listDepartements = new ArrayList<>();
+        HashSet<String> setDepts = new HashSet<>();
+        // récupération de la liste des codes des départements (unique)
+        for (Data d : listDatas) {
+            setDepts.add(d.dept);
+        }
+        for (String dept : setDepts) {
+            Departement departement = new Departement(dept, 0);
+            for (Data d : listDatas) {
+                if (d.dept.equals(departement.deptCode))
+                    departement.deptPopulation += d.population;
+            }
+            listDepartements.add(departement);
+        }
+//        System.out.println("listDepartements = " + listDepartements); // debug
+
+
+        ///////////////////////////////////
+        // peuplement de la liste région //
+        //////////////////////////////////
+        List<Region> listRegions = new ArrayList<>();
+        HashSet<Integer> setRegions = new HashSet<>();
+        // récupération de la liste des codes des régions (unique)
+        for (Data d : listDatas) {
+            setRegions.add(d.codeRegion);
+        }
+        for (int codeRegion : setRegions) {
+            Region region = new Region(codeRegion, "", 0);
+            for (Data d : listDatas) {
+                if (d.codeRegion == region.regCodeRegion) {
+                    region.regNomRegion = d.nomRegion;
+                    region.regPopulation += d.population;
+                }
+            }
+            listRegions.add(region);
+        }
+        System.out.println("listRegions = " + listRegions); // debug
+
+
         int population = 0;
         switch (choix) {
             // population d'une ville donnée
@@ -62,7 +104,7 @@ public class Launch {
                 do {
                     System.out.println("Choisissez une ville:");
                     s = sc.nextLine();
-                    for (Data d : listData) {
+                    for (Data d : listDatas) {
                         if (d.nomCommune.toLowerCase().compareTo(s.toLowerCase()) == 0) {
                             ville = d;
                             break;
@@ -73,7 +115,7 @@ public class Launch {
                 break;
 
 
-            // poulation d'un département donné
+            // population d'un département donné
             case 2:
                 population = 0;
                 do {
@@ -82,23 +124,19 @@ public class Launch {
                         s = sc.nextLine();
                     } while (!s.matches("\\d+"));
                     if (Integer.parseInt(s) == 0) break; // annulation utilisateur
-
-                    for (Data d : listData) {
-                        if (d.dept.compareTo(s) == 0) {
-                            population += d.population;
+                    for (Departement dept : listDepartements) {
+                        if (dept.deptCode.equals(s)) {
+                            population = dept.deptPopulation;
+                            System.out.println("Il y a " + population + " habitants dans le département " + s);
                         }
                     }
                 } while (population == 0 && !s.startsWith("0"));
-                if (population > 0) {
-                    System.out.println("Il y a " + population + " habitants dans le département " + s);
-                }
                 break;
 
 
             // Population d’une région donnée
             case 3:
                 population = 0;
-                String region = "";
                 do {
                     do {
                         System.out.println("Choisissez un numéro de région (ex PdL: 52):");
@@ -106,27 +144,19 @@ public class Launch {
                     } while (!s.matches("\\d+"));
                     if (Integer.parseInt(s) == 0) break; // annulation utilisateur
 
-                    for (Data d : listData) {
-                        if (d.codeRegion == Integer.parseInt(s)) {
-                            population += d.population;
-                            region = d.nomRegion;
+                    for (Region region : listRegions) {
+                        if (region.regCodeRegion == Integer.parseInt(s)) {
+                            population += region.regPopulation;
+                            System.out.println("Il y a " + population + " habitants dans la région " + region.regNomRegion);
                         }
                     }
                 } while (population == 0 && !s.startsWith("0"));
-                if (population > 0) {
-                    System.out.println("Il y a " + population + " habitants dans la région " + region);
-                }
                 break;
 
 
             // Afficher les 10 régions les plus peuplées
             case 4:
                 // TODO: 15/12/2021
-                HashMap<Integer, Integer> mapRegion = new HashMap<>();
-                for (Data d : listData) {
-                    mapRegion.put(d.codeRegion, d.popMunicipale); // NOOOOOOOONNNNNN
-                }
-
                 break;
 
 
@@ -150,11 +180,11 @@ public class Launch {
 
             // les 10 villes les plus peuplées de France
             case 8:
-                Collections.sort(listData, new compFrance());
+                Collections.sort(listDatas, new compFrance());
                 System.out.println("Les 10 villes les plus peuplées de France:");
                 for (int i = 0; i < 10; i++) {
-                    System.out.println(i + 1 + ": " + listData.get(i).nomCommune + " -- " + listData.get(i).popMunicipale + " hab.");
-                    System.out.println("listData = " + listData.get(i));
+                    System.out.println(i + 1 + ": " + listDatas.get(i).nomCommune + " -- " + listDatas.get(i).popMunicipale + " hab.");
+                    System.out.println("listData = " + listDatas.get(i));
                 }
                 break;
             default:
