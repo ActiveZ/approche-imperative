@@ -16,16 +16,17 @@ public class Launch {
         Scanner sc = new Scanner(System.in);
         String s; // choix utilisateur
         do {
-            System.out.println("Choisissez:\n" +
-                    "0: Sortir\n" +
-                    "1: Population d'une ville\n" +
-                    "2: Population d'un département\n" +
-                    "3: Population d'une région\n" +
-                    "4: Les 10 régions les plus peuplées\n" +
-                    "5: Les 10 départements les plus peuplés\n" +
-                    "6: Les 10 villes les plus peuplées d'un département\n" +
-                    "7: Les 10 villes les plus peuplées d'une région\n" +
-                    "8: Les 10 villes les plus peuplées de France"
+            System.out.println("""
+                    Choisissez:
+                    0: Sortir
+                    1: Population d'une ville
+                    2: Population d'un département
+                    3: Population d'une région
+                    4: Les 10 régions les plus peuplées
+                    5: Les 10 départements les plus peuplés
+                    6: Les 10 villes les plus peuplées d'un département
+                    7: Les 10 villes les plus peuplées d'une région
+                    8: Les 10 villes les plus peuplées de France"""
             );
             s = sc.nextLine();
         } while (!s.matches("[0-8]"));
@@ -117,7 +118,7 @@ public class Launch {
                     System.out.println("Choisissez une ville:");
                     s = sc.nextLine();
                     for (Data d : listDatas) {
-                        if (d.nomCommune.toLowerCase().compareTo(s.toLowerCase()) == 0) {
+                        if (d.nomCommune.compareToIgnoreCase(s) == 0) {
                             ville = d;
                             break;
                         }
